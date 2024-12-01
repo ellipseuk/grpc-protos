@@ -34,7 +34,7 @@ This repository serves as the source of truth for the `.proto` files used in our
 To work with this repository, ensure you have the following installed:
 
 1. **Protocol Buffers Compiler (`protoc`)**:
-   - Version 29 or higher.
+   - Version 3.20 or higher.
    - [Installation guide](https://grpc.io/docs/protoc-installation/).
 
 2. **Go Plugins for Protobuf**:
