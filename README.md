@@ -19,16 +19,14 @@ This repository serves as the source of truth for the `.proto` files used in our
 .
 ├── proto/                     # Directory containing .proto files
 │   └── sso/                   # Example service
-│       ├── auth.proto         # Authentication service
-│       └── user.proto         # User management service
+│       └── sso.proto           
 ├── gen/                       # Generated Go code
 │   └── go/
-│       └── sso/
-│           ├── auth.pb.go     # Generated code for auth.proto
-│           ├── auth_grpc.pb.go
-│           ├── user.pb.go
-│           └── user_grpc.pb.go
-├── README.md                  # Project documentation
+│       └── sso/               # Generated code for sso.proto
+│           ├── sso_grpc.pb.go
+│           └── sso.pb.go
+├── go.mod                     # Go module definition file
+├── go.sum                     # Dependency checksum file
 └── Taskfile.yaml              # Automation tasks
 ```
 
@@ -36,7 +34,7 @@ This repository serves as the source of truth for the `.proto` files used in our
 To work with this repository, ensure you have the following installed:
 
 1. **Protocol Buffers Compiler (`protoc`)**:
-   - Version 3.20 or higher.
+   - Version 29 or higher.
    - [Installation guide](https://grpc.io/docs/protoc-installation/).
 
 2. **Go Plugins for Protobuf**:
