@@ -1,4 +1,4 @@
-module grpc-service
+module github.com/ellipseuk/grpc-protos
 
 go 1.23.3
 
